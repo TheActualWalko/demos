@@ -1,0 +1,32 @@
+body>*:not(button){
+  position:fixed;
+  top:50%;
+  left:50%;
+  z-index:1;
+  -webkit-transition : margin-left 0.4s ease, opacity 0.4s ease;
+     -moz-transition : margin-left 0.4s ease, opacity 0.4s ease;
+       -o-transition : margin-left 0.4s ease, opacity 0.4s ease;
+          transition : margin-left 0.4s ease, opacity 0.4s ease;
+}
+body>button{
+  background:transparent;
+  border:none;
+  position:fixed;
+  top:0;
+  bottom:0;
+  width:50px;
+  z-index:2;
+}
+body>button:hover{
+  cursor:pointer;
+  background:rgba(255,255,255,0.5);
+}
+*:active, *:focus{
+  outline:none;
+}
+body>button:first-of-type{
+  left:0;
+}
+body>button:last-of-type{
+  right:0;
+}
